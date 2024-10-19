@@ -1,5 +1,5 @@
 let container = document.querySelector(".container");
-let changeGrid = document.querySelector(".changeGrid");
+let changeGrid = document.querySelector(".change-grid");
 
 function createGrid(squares){
     for(let i = 0; i<squares;i++){
@@ -14,7 +14,14 @@ function createGrid(squares){
         }
     }
 }
-createGrid(100);
+    createGrid(100);
+
+    changeGrid.addEventListener('click',()=>{
+        container.innerHTML=" ";
+        let newGrid = prompt("Input a number of squares (max 100):");
+        createGrid(newGrid);
+        
+    })
 
     let grids = document.querySelectorAll(".grid");
 

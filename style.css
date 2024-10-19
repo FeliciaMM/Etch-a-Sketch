@@ -1,10 +1,13 @@
 body{
-    background-color: blueviolet;
+    background-image: url(pictures/practica\ pictor-01.png);
+    background-size:cover;
 }
 
 .container{
     display:flex;
     flex-wrap: wrap;
+    margin-left: 270px;
+    margin-top:270px;
   
 
 }
