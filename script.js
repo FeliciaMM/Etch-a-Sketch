@@ -14,6 +14,8 @@ function createGrid(squares){
         }
     }
 }
+createGrid(100);
+
     let grids = document.querySelectorAll(".grid");
 
     grids.forEach(grid => {
@@ -22,7 +24,7 @@ function createGrid(squares){
         })
     });
 
-createGrid(16);
+
 
 
 
