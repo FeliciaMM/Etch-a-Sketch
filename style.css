@@ -1,15 +1,16 @@
 body{
     background-image: url(pictures/practica\ pictor-01.png);
-    background-size:cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 90vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .container{
     display:flex;
     flex-wrap: wrap;
-    margin-left: 270px;
-    margin-top:270px;
-  
-
+    margin-left: 90px;
+    margin-top: 50px;
 }
 
 .grid{
@@ -17,4 +18,37 @@ body{
     width: 20px;
     height: 20px;
     background-color: white;
+}
+
+.flex-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: -8px;
+}
+
+.play-area{
+    display: flex;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 30px;
+    margin-top: 190px;
+}
+
+button{
+    width:150px;
+    height: 100px;
+    background-color: bisque;
+    color: blue;
+}
+
+.footer{
+    margin-top: auto;
+    background-color: rgb(11, 11, 111);
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
 }

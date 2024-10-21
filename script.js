@@ -7,14 +7,18 @@ function createGrid(squares){
         let grid = document.createElement("div");
         grid.classList.add("grid")
         container.appendChild(grid);   
-        grid.style.width=400/squares+"px"
-        grid.style.height=400/squares+"px"
-        container.style.width=400+"px"
-        container.style.height=400+"px"
+        grid.style.width=600/squares+"px"
+        grid.style.height=600/squares+"px"
+        container.style.width=600+"px"
+        container.style.height=600+"px"
+
+        grid.addEventListener('mouseenter',()=>{
+            grid.style.background = "black";
+        })
         }
     }
 }
-    createGrid(100);
+    createGrid(30);
 
     changeGrid.addEventListener('click',()=>{
         container.innerHTML=" ";
@@ -23,13 +27,7 @@ function createGrid(squares){
         
     })
 
-    let grids = document.querySelectorAll(".grid");
-
-    grids.forEach(grid => {
-        grid.addEventListener('mouseenter',()=>{
-            grid.style.background = "black";
-        })
-    });
+   
 
 
 
